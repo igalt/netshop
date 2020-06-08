@@ -1,0 +1,106 @@
+/* for the top bar & buttons */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #d9d9d9;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+img.product {
+  height: auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+img.profile {
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+}
+
+.carousel img {
+  max-width: 100%;
+}
+
+.carousel-caption {
+  color: white;
+  background-color: #cdc6ae;
+  opacity: 0.9;
+}
+
+.header-top {
+  background-color: #4484CE;
+}
+
+.navContainer {
+  color: black;
+  background-color: white;
+}
+
+.navContainer a {
+  color: black;
+}
+
+.underline {
+  width: 100px;
+  height: 2px;
+  background-color: orangered;
+}
+
+.card {
+  margin-bottom: 15px;
+  border-radius: 12px;
+  max-width: 100%;
+}
+
+.card-body button {
+  background-color: #4484CE;
+}
+
+.card-body h6 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cart {
+  background-color: #cdc6ae;
+}
+
+.cart ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart li {
+  padding-left: 0;
+  margin-top: 3rem;
+  border-bottom: 1px solid #DDD;
+}
+
+.cart button.checkout {
+  background-color: #4484CE;
+}
+
+.cart .thumbnail {
+  max-width: 50px;
+  height: auto;
+  float: left;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  background-color: #4484CE;
+}
+
+footer a {
+  color: #e4dfda;
+}
+/*# sourceMappingURL=netshop.css.map */

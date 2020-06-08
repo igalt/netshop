@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\Gabi-XP_course\\fs-course\\part2\\projects\\shopping-cart\\best-of-w4"
+		},
+		{
+			"path": "..\\NetShop - ytt"
+		},
+		{
+			"path": "..\\Es6 Serge ex\\users"
+		},
+		{
+			"path": "..\\Gabi-XP_course\\fs-course\\part5\\projects\\es6-project"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}
