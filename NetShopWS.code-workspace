@@ -1,19 +1,28 @@
 {
 	"folders": [
 		{
+			"name": "NetShop",
 			"path": "."
 		},
 		{
+			"name": "server",
+			"path": "server"
+		},
+		{
+			"name": "best-of-w4",
 			"path": "..\\Gabi-XP_course\\fs-course\\part2\\projects\\shopping-cart\\best-of-w4"
 		},
 		{
-			"path": "..\\NetShop - ytt"
-		},
-		{
+			"name": "users",
 			"path": "..\\Es6 Serge ex\\users"
 		},
 		{
-			"path": "..\\Gabi-XP_course\\fs-course\\part5\\projects\\es6-project"
+			"name": "advanced js",
+			"path": "..\\Gabi-XP_course\\fs-course\\part3\\advanced js"
+		},
+		{
+			"name": "node",
+			"path": "..\\Serge\\demos\\node"
 		}
 	],
 	"settings": {
