@@ -5,9 +5,11 @@ const productsURL = "http://localhost:8000/products";
 const customerURL = "http://localhost:8000/customer";
 const cartURL = "http://localhost:8000/cart";
 
-//const customerURL = "http://localhost:3000/customer";
-//const productsURL = "http://localhost:3000/products";
-//const cartURL = "http://localhost:3000/cart";
+/*
+const customerURL = "http://localhost:3000/customer";
+const productsURL = "http://localhost:3000/products";
+const cartURL = "http://localhost:3000/cart";
+*/
 
 export class Data{
 
