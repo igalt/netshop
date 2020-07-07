@@ -78,7 +78,10 @@ function renderProducts(){
 
 function loadProductsClassArray(arrProducts){
     arrProducts.forEach(prod => {
-        Globals.allProducts.push(Product.fromJSON(prod));
+        // let newProd = Product.fromJSON(prod);
+        let newProd = new Product(prod.id, prod.name, prod.price, prod.imageURL, prod.shippableTo, prod.hasVAT, prod.category);
+        
+        Globals.allProducts.push(newProd);
     })
 }
 
@@ -92,8 +95,6 @@ function addProductsButtonEvents(){
 }
 
 function loadProducts(){
-    let products;
-
     Data.getProducts().then(data => {
         // Converting from JSON to classes 
         let arrProducts = data;
@@ -140,8 +141,13 @@ function renderShoppingCartDetails(){
 
 function loadShoppingCart(){
     Data.getShoppingCart().then(function (data) {
-        // Converting from JSON to classes 
-        Globals.cart = ShoppingCart.fromJSON(data);
+        if (data){
+            // Converting from JSON to classes 
+            Globals.cart = ShoppingCart.fromJSON(data);
+        } else{
+            Globals.cart = new ShoppingCart();
+        }
+
 
         // Now we fill the DOM with products
         renderShoppingCartDetails();
@@ -163,9 +169,23 @@ window.onload = function(){
     // loading ShoppingCart from localStorage / JSON
     loadShoppingCart();
     
+    // event listener for checkout buttons
+    document.querySelector('#btnOpenCheckoutModal').addEventListener("click", e => {
+        document.querySelector('#checkoutSummary').innerText = `Your total is $${Globals.cart.totalPrice}`;
+    });
+
+    document.querySelector('#btnCheckout').addEventListener('click', e => {
+        try{
+            Globals.cart.checkout(Globals.customer);
+            Globals.cart.ship(document.querySelector('#ddlCountry').value)
+            document.querySelector('#shippingSuccess').classList.remove('d-none');
+        } catch (err){
+            document.querySelector('#shippingError').classList.remove('d-none');
+        }
+    });
 }
 
 window.onbeforeunload = function(){
     // Saving data before user leaves the site
-    Data.saveLocalStorageData();
+   Data.saveLocalStorageData();
 }

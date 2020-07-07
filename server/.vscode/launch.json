@@ -8,12 +8,11 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "runtimeExecutable": "nodemon",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/server/mongoose-server.js"
-        },
-
+            //"runtimeExecutable": "nodemon",
+            "program": "${workspaceFolder}\\mongoose-server.js"
+        }
     ]
 }

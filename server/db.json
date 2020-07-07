@@ -8,7 +8,7 @@
         {
             "id": 1,
             "name": "Wave Art",
-            "_price": 80,
+            "price": 80,
             "imageURL": "img/arts1.jpg",
             "shippableTo": [
                 "Israel"
@@ -19,7 +19,7 @@
         {
             "id": 2,
             "name": "Eye Gazer",
-            "_price": 120,
+            "price": 120,
             "imageURL": "img/arts2.jpg",
             "shippableTo": [
                 "Israel",
@@ -31,7 +31,7 @@
         {
             "id": 3,
             "name": "Scenic Stones",
-            "_price": 150,
+            "price": 150,
             "imageURL": "img/arts3.jpg",
             "shippableTo": [
                 "Israel"
@@ -42,7 +42,7 @@
         {
             "id": 4,
             "name": "Fractal",
-            "_price": 140,
+            "price": 140,
             "imageURL": "img/arts4.jpg",
             "shippableTo": [
                 "Israel",
@@ -54,7 +54,7 @@
         {
             "id": 5,
             "name": "Tribal #1",
-            "_price": 200,
+            "price": 200,
             "imageURL": "img/arts5.jpg",
             "shippableTo": [
                 "Israel"
@@ -65,7 +65,7 @@
         {
             "id": 6,
             "name": "Tribal #2",
-            "_price": 250,
+            "price": 250,
             "imageURL": "img/arts6.jpg",
             "shippableTo": [
                 "Israel",
@@ -77,7 +77,7 @@
         {
             "id": 7,
             "name": "Abstract Painting",
-            "_price": 70,
+            "price": 70,
             "imageURL": "img/arts7.jpg",
             "shippableTo": [
                 "Israel"
@@ -88,7 +88,7 @@
         {
             "id": 8,
             "name": "Geometric Patterns",
-            "_price": 90,
+            "price": 90,
             "imageURL": "img/arts8.jpg",
             "shippableTo": [
                 "Israel",
@@ -99,7 +99,7 @@
         },  {
             "id": 9,
             "name": "Dog Jacket",
-            "_price": 35,
+            "price": 35,
             "imageURL": "img/fashion9.jpg",
             "shippableTo": [
                 "Israel"
@@ -110,7 +110,7 @@
         {
             "id": 10,
             "name": "Drink Beer t-shirt",
-            "_price": 13,
+            "price": 13,
             "imageURL": "img/fashion10.jpg",
             "shippableTo": [
                 "Israel",
@@ -121,7 +121,7 @@
         },   {
             "id": 11,
             "name": "Sports Jacket",
-            "_price": 70,
+            "price": 70,
             "imageURL": "img/fashion11.jpg",
             "shippableTo": [
                 "Israel"
@@ -132,7 +132,7 @@
         {
             "id": 12,
             "name": "Psychedelic t-shirt",
-            "_price": 50,
+            "price": 50,
             "imageURL": "img/fashion12.jpg",
             "shippableTo": [
                 "Israel",
@@ -143,7 +143,7 @@
         },   {
             "id": 13,
             "name": "Elegant Jacket",
-            "_price": 150,
+            "price": 150,
             "imageURL": "img/fashion13.jpg",
             "shippableTo": [
                 "Israel"
@@ -154,7 +154,7 @@
         {
             "id": 14,
             "name": "Sports Jacket",
-            "_price": 220,
+            "price": 220,
             "imageURL": "img/fashion14.jpg",
             "shippableTo": [
                 "Israel",
@@ -166,7 +166,7 @@
         {
             "id": 15,
             "name": "White Top",
-            "_price": 60,
+            "price": 60,
             "imageURL": "img/fashion15.jpg",
             "shippableTo": [
                 "Israel"
@@ -177,7 +177,7 @@
         {
             "id": 16,
             "name": "Corona Cap",
-            "_price": 15,
+            "price": 15,
             "imageURL": "img/fashion16.jpg",
             "shippableTo": [
                 "Israel",

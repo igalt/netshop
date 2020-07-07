@@ -1,15 +1,16 @@
 import {Constants, Globals} from './globals.mjs';
 
 const localStorageName = "netshopData";
-const productsURL = "http://localhost:8000/products";
-const customerURL = "http://localhost:8000/customer";
-const cartURL = "http://localhost:8000/cart";
+
+const productsURL = "http://localhost:8000/api/products";
+const customerURL = "http://localhost:8000/api/customer";
+const cartURL = "http://localhost:8000/api/cart";
 
 /*
 const customerURL = "http://localhost:3000/customer";
 const productsURL = "http://localhost:3000/products";
 const cartURL = "http://localhost:3000/cart";
-*/
+*/    
 
 export class Data{
 
@@ -42,11 +43,13 @@ export class Data{
           return Promise.resolve(dataCart);
       }
       else{ // if it doesn't exist, get it from db.json
-        return fetch(cartURL).then(function (response) {
+          return Promise.resolve(null);
+
+/*        return fetch(cartURL).then(function (response) {
           // This means the API call was successful!
           // Now we convert the stream data to readable JSON
           return response.json();
-        })
+        })*/
       }
     }
 

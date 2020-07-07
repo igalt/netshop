@@ -5,24 +5,7 @@
 			"path": "."
 		},
 		{
-			"name": "server",
 			"path": "server"
-		},
-		{
-			"name": "best-of-w4",
-			"path": "..\\Gabi-XP_course\\fs-course\\part2\\projects\\shopping-cart\\best-of-w4"
-		},
-		{
-			"name": "users",
-			"path": "..\\Es6 Serge ex\\users"
-		},
-		{
-			"name": "advanced js",
-			"path": "..\\Gabi-XP_course\\fs-course\\part3\\advanced js"
-		},
-		{
-			"name": "node",
-			"path": "..\\Serge\\demos\\node"
 		}
 	],
 	"settings": {
