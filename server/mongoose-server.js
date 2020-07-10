@@ -7,6 +7,7 @@ const app = express(); //express is a function that returns an instance
 
 app.use(cors()) // enabling cross origin requests
 app.use(express.json()); // this makes it easier to process JSON requests 
+app.use(express.static('../client'));
 
 app.listen(8000, () => console.log('Netshop API is listening on port 8000... '));
 
