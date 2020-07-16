@@ -1,13 +1,13 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const cors = require('cors');
+//const cors = require('cors');
 
 // Initializing Server
 const app = express(); //express is a function that returns an instance
 
-app.use(cors()) // enabling cross origin requests
+//app.use(cors()) // enabling cross origin requests
 app.use(express.json()); // this makes it easier to process JSON requests 
-app.use(express.static('../client'));
+app.use(express.static('client')); // serving  our front-end client files with this server
 
 app.listen(8000, () => console.log('Netshop API is listening on port 8000... '));
 
@@ -46,7 +46,11 @@ const Product = mongoose.model('Product', productSchema); // Product is a class
 
 
 app.get('/api/products', (req, res) =>{
-  Product.find().then(data => res.send(data));
+  Product.find({ category: 'arts', price: {$gt: 100}})
+         .sort('-price')
+         .select('name, price')
+         .limit(5)
+         .then(data => res.send(data));
 });
 
 app.get('/api/products/:id', (req, res) =>{

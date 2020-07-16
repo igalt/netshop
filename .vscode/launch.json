@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "runtimeExecutable": "nodemon",
+            //"runtimeExecutable": "nodemon",
             "skipFiles": [
                 "<node_internals>/**"
             ],

@@ -17,4 +17,8 @@ export class Product{
         }
         return this._price;
     }
+
+    set price(thePrice){
+        this._price = thePrice;
+    }
 }

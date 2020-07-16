@@ -3,12 +3,6 @@
 		{
 			"name": "NetShop",
 			"path": "."
-		},
-		{
-			"path": "server"
-		},
-		{
-			"path": "..\\Serge\\demos\\node"
 		}
 	],
 	"settings": {

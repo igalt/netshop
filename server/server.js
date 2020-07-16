@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors')
 
 let products = [
-    {
+    
         "id": 1,
         "name": "Wave Art",
         "price": 80,
